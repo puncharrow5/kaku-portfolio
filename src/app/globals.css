@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+@layer components {
+  .card-dynamic-size {
+    @apply absolute top-0 w-full h-full;
+  }
+
+  .card-front-back {
+    @apply flex flex-col w-full bg-[#373737] rounded-lg shadow-md;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+@layer utilities {
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  font-weight: 500;
+  src: url("/fonts/NanumGothic-Regular.ttf");
+}
+@font-face {
+  font-family: "NanumGothic";
+  font-weight: 700;
+  src: url("/fonts/NanumGothic-Bold.ttf");
+}
+
+html {
+  font-family: "NanumGothic", "Noto Sans KR", sans-serif;
+  color: #1d1d1f;
+}
+
+body {
+  scrollbar-width: none;
+  background-color: #000000;
+}
+
+.marker_image {
+  width: 59.1px;
+  height: 79.6px;
+  background-image: url("/images/marker.png");
+  background-size: 100% 100%;
+  @media only screen and (max-width: 768px) {
+    background-image: url("/images/marker.png");
+    width: 34.6px;
+    height: 46.6px;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #232323 !important;
+}
