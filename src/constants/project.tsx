@@ -220,7 +220,7 @@ export const projects: Project[] = [
     achievements: ["포트폴리오 사이트 개발 및 배포 완료"],
     slideImages: [portfolio1, portfolio2, portfolio3, portfolio4],
     contents: ["개발자 포트폴리오 사이트"],
-    links: ["https://www.naver.com"],
+    links: ["https://kaku-portfolio.info"],
     githubs: ["https://github.com/puncharrow5/kaku-portfolio"],
   },
   {

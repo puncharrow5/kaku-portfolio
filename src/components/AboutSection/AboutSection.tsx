@@ -6,18 +6,28 @@ import Image from "next/image";
 import { interests } from "@/constants";
 import { profileMimoticon } from "../../../public/images";
 import { IoLocationSharp, IoMail } from "react-icons/io5";
-import { RiGlobalLine } from "react-icons/ri";
+import { RiFileDownloadFill, RiGlobalLine } from "react-icons/ri";
 import { MdOutlinePhoneIphone } from "react-icons/md";
 import { LuCalendarDays } from "react-icons/lu";
+import { useSetRecoilState } from "recoil";
+import { mapModalState } from "@/recoil/atoms";
 
 interface Props {
   isMobile: boolean;
 }
 
 export default function AboutSection({ isMobile }: Props) {
+  const setMapModal = useSetRecoilState(mapModalState);
+
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleOpenMap = () => {
+    setMapModal({
+      show: true,
+    });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -85,7 +95,7 @@ export default function AboutSection({ isMobile }: Props) {
                 </div>
               )}
 
-              <div className="flex items-center gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]">
+              <div className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px] cursor-default">
                 <RiGlobalLine size={30} />
                 <div className="flex flex-col gap-y-[4px]">
                   <p className="text-[14px] md:text-[16px]">대한민국</p>
@@ -93,7 +103,10 @@ export default function AboutSection({ isMobile }: Props) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]">
+              <div
+                onClick={handleOpenMap}
+                className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px] cursor-pointer"
+              >
                 <IoLocationSharp size={30} />
                 <div className="flex flex-col gap-y-[4px]">
                   <p className="text-[14px] md:text-[16px]">서울특별시 성동구</p>
@@ -101,20 +114,38 @@ export default function AboutSection({ isMobile }: Props) {
                 </div>
               </div>
 
-              <div className="flex items-center gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]">
+              <div className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px] cursor-default">
                 <LuCalendarDays size={30} />
                 <p className="text-[14px] md:text-[16px]">1996. 03. 21</p>
               </div>
 
-              <div className="flex items-center gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]">
+              <a
+                title="이메일"
+                href="mailto:seunghyeon9696@gmail.com"
+                className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]"
+              >
                 <IoMail size={30} />
                 <p className="text-[14px] md:text-[16px]">osh4761@hanmail.net</p>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-x-[5px] md:gap-x-[10px]">
+              <a
+                title="전화번호"
+                href="sms:+8210-2291-4761"
+                className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]"
+              >
                 <MdOutlinePhoneIphone size={30} />
                 <p className="text-[14px] md:text-[16px]">(+82)-10-2291-4761</p>
-              </div>
+              </a>
+
+              <a
+                title="경력기술서"
+                download
+                href="/files/오승현_경력기술서.pdf"
+                className="group flex items-center w-fit gap-x-[5px] md:gap-x-[10px]"
+              >
+                <RiFileDownloadFill size={30} />
+                <p className="text-[14px] md:text-[16px]">경력기술서</p>
+              </a>
             </div>
           </div>
         </div>

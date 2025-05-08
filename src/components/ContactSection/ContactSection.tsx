@@ -211,7 +211,7 @@ export default function ContactSection() {
           <div className="group relative flex justify-center">
             <div
               onClick={handleOpenMap}
-              className="group flex justify-center items-center w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] text-white bg-[#363636] group-hover:bg-[#1ca555] rounded-lg duration-500 z-[1]"
+              className="group flex justify-center items-center w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] text-white bg-[#363636] group-hover:bg-[#1ca555] rounded-lg duration-500 cursor-pointer z-[1]"
             >
               <HiMiniMapPin className="size-[36px] sm:size-[50px]" />
             </div>
