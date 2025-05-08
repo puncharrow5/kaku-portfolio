@@ -169,7 +169,7 @@ export const techStacks: TechStack[] = [
     title: "Database",
     skills: [
       {
-        name: "Mysql",
+        name: "MySQL",
         icon: () => <StackIcon name="mysql" className="size-[20px] md:size-[30px]" />,
       },
       {
