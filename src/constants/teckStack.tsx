@@ -84,7 +84,7 @@ export const techStacks: TechStack[] = [
         icon: () => <StackIcon name="prisma" className="size-[20px] md:size-[30px]" />,
       },
       {
-        name: "Graphql",
+        name: "GraphQL",
         icon: () => <StackIcon name="graphql" className="size-[20px] md:size-[30px]" />,
       },
       {
