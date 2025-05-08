@@ -125,7 +125,7 @@ export default function AboutSection({ isMobile }: Props) {
                 className="flex items-center w-fit gap-x-[5px] md:gap-x-[10px] mb-[12px] md:mb-[15px]"
               >
                 <IoMail size={30} />
-                <p className="text-[14px] md:text-[16px]">osh4761@hanmail.net</p>
+                <p className="text-[14px] md:text-[16px]">seunghyeon9696@gmail.com</p>
               </a>
 
               <a
