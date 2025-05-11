@@ -184,20 +184,23 @@ export default function SkillSection({ isMobile, setActiveIndex }: Props) {
       ref={containerRef}
       className="relative flex flex-col justify-center items-center w-screen min-h-[100svh] md:py-[240px] md:px-[80px] bg-[#161616]"
     >
-      <div className="relative flex flex-col md:flex-row w-full max-w-[500px] md:max-w-[1280px] gap-[20px]">
-        <div
-          className={`absolute bottom-[-100px] left-[-200px] size-[500px] bg-red-700/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
-            isIntersecting ? `opacity-100` : `opacity-0`
-          }`}
-        />
-        <div
-          className={`absolute top-[-200px] right-[-240px] size-[800px] bg-yellow-400/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
-            isIntersecting ? `opacity-100` : `opacity-0`
-          }`}
-        />
-
-        <div className="vscode relative flex flex-col w-full md:max-w-[1280px] h-full md:min-h-[620px] border-[1px] border-[#2B2B2B] rounded-md opacity-0">
-          <div className="flex justify-center items-center h-[45px] bg-[#1F1F1F] border-[1px] border-[#2B2B2B] rounded-t-md">
+      <div className="relative flex flex-col md:flex-row w-full md:max-w-[1280px] h-full gap-[20px]">
+        {!isMobile && (
+          <>
+            <div
+              className={`absolute bottom-[-100px] left-[-200px] size-[500px] bg-red-700/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
+                isIntersecting ? `opacity-100` : `opacity-0`
+              }`}
+            />
+            <div
+              className={`absolute top-[-200px] right-[-240px] size-[800px] bg-yellow-400/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
+                isIntersecting ? `opacity-100` : `opacity-0`
+              }`}
+            />
+          </>
+        )}
+        <div className="vscode relative flex flex-col w-full md:max-w-[1280px] h-full md:min-h-[620px] border-[1px] border-[#2B2B2B] md:rounded-md opacity-0">
+          <div className="flex justify-center items-center h-[45px] bg-[#1F1F1F] border-[1px] border-[#2B2B2B] md:rounded-t-md">
             <div className="absolute flex left-[20px] gap-x-[8px]">
               <div className="size-[11px] bg-[#FE5F57] rounded-full" />
               <div className="size-[11px] bg-[#FEBB2E] rounded-full" />

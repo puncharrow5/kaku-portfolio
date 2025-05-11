@@ -167,7 +167,7 @@ export default function CareerSection({ isMobile }: Props) {
             className="absolute w-[80%] max-w-[400px] top-[-40px] rounded-2xl shadow-xl"
             alt="리얼디비전 로고"
           />
-          <div className="flex flex-col w-full mt-[70px]">
+          <div className="flex flex-col w-full mt-[50px] md:mt-[70px]">
             <p className="text-[30px] font-bold">회사명</p>
             <p className="text-[16px]">리얼디비젼</p>
             <p className="mt-[10px] text-[30px] font-bold">부서</p>
