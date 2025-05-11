@@ -154,10 +154,7 @@ export const projects: Project[] = [
       "애니메이션 및 이미지 최적화로 사이트 성능 개선",
     ],
     slideImages: [limeodyssey1, limeodyssey2, limeodyssey3, limeodyssey4],
-    contents: [
-      "스타코링크 社의 퍼블리싱 신작 모바일 게임 '라임오디세이'의 사전예약 사이트",
-      "첫 외주 프로젝트",
-    ],
+    contents: ["스타코링크 社의 퍼블리싱 신작 모바일 게임 '라임오디세이'의 사전예약 사이트"],
   },
   {
     thumbnail: () => (
