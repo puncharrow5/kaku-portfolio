@@ -180,7 +180,7 @@ export default function ContactSection() {
           </button>
         </div>
 
-        <div className="sm:flex grid grid-cols-3 sm:flex-col justify-around sm:justify-center items-center w-full sm:w-auto h-auto px-0 sm:px-[20px] py-[20px] sm:py-0 gap-y-[20px] bg-black bg-opacity-20 backdrop-blur-sm rounded-r-none sm:rounded-r-xl round-b-xl sm:rounded-b-none">
+        <div className="sm:flex grid grid-cols-3 sm:flex-col justify-around sm:justify-center items-center w-full sm:w-auto h-auto px-0 sm:px-[20px] py-[20px] sm:py-0 gap-y-[20px] bg-black bg-opacity-20 backdrop-blur-sm rounded-r-none sm:rounded-r-xl rounded-b-xl sm:rounded-b-none">
           <div className="group relative flex justify-center">
             <a
               title="이메일"
