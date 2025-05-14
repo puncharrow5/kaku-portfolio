@@ -164,7 +164,7 @@ export default function AboutSection({ isMobile }: Props) {
             <p className="mb-[10px] md:mb-[15px] lg:mb-[20px] text-[30px] xl:text-[36px] font-bold leading-[1]">
               Experience
             </p>
-            <p className="mb-[5px] text-[18px] lg:text-[20px] font-bold">리얼디비전(로디언즈)</p>
+            <p className="mb-[5px] text-[18px] lg:text-[20px] font-bold">리얼디비전</p>
             <p className="text-[14px] md:text-[16px] leading-[1]">웹 / 앱 개발</p>
             <p className="mb-[20px] lg:mb-[30px] text-[14px] md:text-[16px] text-[#9c9c9c]">
               2023. 11. 1 ~ 2024. 08. 31
