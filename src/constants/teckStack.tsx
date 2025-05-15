@@ -1,18 +1,8 @@
 import Image from "next/image";
 
 import StackIcon from "tech-stack-icons";
-import {
-  SiExpress,
-  SiApollographql,
-  SiSwr,
-  SiAxios,
-  SiRecoil,
-  SiStyledcomponents,
-  SiVercel,
-  SiNotion,
-} from "react-icons/si";
-import { gsapIcon, zeplinIcon } from "../../public/images";
-import { FaWindows } from "react-icons/fa6";
+import { SiApollographql, SiRecoil, SiStyledcomponents, SiVercel, SiNotion } from "react-icons/si";
+import { zeplinIcon } from "../../public/images";
 
 export type TechStack = {
   id: number;
@@ -44,14 +34,6 @@ export const techStacks: TechStack[] = [
         name: "Python",
         icon: () => <StackIcon name="python" className="size-[20px] md:size-[30px]" />,
       },
-      {
-        name: "HTML",
-        icon: () => <StackIcon name="html5" className="size-[20px] md:size-[30px]" />,
-      },
-      {
-        name: "CSS",
-        icon: () => <StackIcon name="css3" className="size-[20px] md:size-[30px]" />,
-      },
     ],
   },
   {
@@ -72,10 +54,6 @@ export const techStacks: TechStack[] = [
         icon: () => <StackIcon name="reactjs" className="size-[20px] md:size-[30px]" />,
       },
       {
-        name: "Express",
-        icon: () => <SiExpress className="size-[20px] md:size-[30px]" />,
-      },
-      {
         name: "NestJs",
         icon: () => <StackIcon name="nestjs" className="size-[20px] md:size-[30px]" />,
       },
@@ -92,14 +70,6 @@ export const techStacks: TechStack[] = [
         icon: () => <SiApollographql className="size-[20px] md:size-[30px]" />,
       },
       {
-        name: "SWR",
-        icon: () => <SiSwr className="size-[20px] md:size-[30px]" />,
-      },
-      {
-        name: "Axios",
-        icon: () => <SiAxios className="size-[20px] md:size-[30px]" />,
-      },
-      {
         name: "Recoil",
         icon: () => <SiRecoil className="size-[20px] md:size-[30px] text-[#1480FD]" />,
       },
@@ -110,10 +80,6 @@ export const techStacks: TechStack[] = [
       {
         name: "Styled-Components",
         icon: () => <SiStyledcomponents className="size-[20px] md:size-[30px]" />,
-      },
-      {
-        name: "GSAP",
-        icon: () => <Image src={gsapIcon} className="size-[20px] md:size-[30px]" alt="Framer" />,
       },
     ],
   },
@@ -146,25 +112,6 @@ export const techStacks: TechStack[] = [
   },
   {
     id: 4,
-    type: "environment",
-    title: "Environment",
-    skills: [
-      {
-        name: "NodeJs",
-        icon: () => <StackIcon name="nodejs" className="size-[20px] md:size-[30px]" />,
-      },
-      {
-        name: "Window",
-        icon: () => <FaWindows className="size-[20px] md:size-[30px] text-[#0B75D1]" />,
-      },
-      {
-        name: "Linux",
-        icon: () => <StackIcon name="linux" className="size-[20px] md:size-[30px]" />,
-      },
-    ],
-  },
-  {
-    id: 5,
     type: "database",
     title: "Database",
     skills: [
@@ -183,7 +130,7 @@ export const techStacks: TechStack[] = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     type: "etc",
     title: "Etc",
     skills: [

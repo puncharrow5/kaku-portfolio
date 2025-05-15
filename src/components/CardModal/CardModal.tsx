@@ -99,7 +99,7 @@ export default function CardModal() {
     >
       <div
         onClick={handlePreventEvent}
-        className="modal relative flex flex-col w-full max-w-[1200px] max-h-full md:max-h-[70vh] min-h-[55vh] p-[40px] md:p-[40px] bg-[#373737] rounded-xl cursor-default"
+        className="modal relative flex flex-col w-full max-w-[1200px] max-h-full md:max-h-[600px] min-h-[55vh] p-[40px] md:p-[40px] bg-[#373737] rounded-xl cursor-default"
       >
         <div className="absolute flex flex-col top-[0px] right-[-50px] md:right-[-70px] gap-y-[10px] md:gap-y-[20px]">
           <div
