@@ -193,7 +193,7 @@ export default function SkillSection({ isMobile, setActiveIndex }: Props) {
               }`}
             />
             <div
-              className={`absolute top-[-200px] right-[-240px] size-[800px] bg-yellow-400/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
+              className={`absolute top-[-100px] right-[-240px] size-[600px] bg-yellow-400/60 rounded-full blur-3xl duration-[1500ms] delay-300 z-0 ${
                 isIntersecting ? `opacity-100` : `opacity-0`
               }`}
             />
